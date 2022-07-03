@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        .pic {
+
+            height: 100vh;
+            width: 100%;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(Book.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: auto;
+            background-attachment: fixed;
+
+
+        }
+
+        .reserv {
+            width: 50%;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.671);
+            margin: auto;
+            border-radius: 50px;
+        }
+
+        .data {
+
+            margin-left: 13%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #ffff;
+            font-weight: bold;
+
+        }
+
+
+        input[type=text],
+        input[type=time],
+        input[type=date],
+        input[type=number] {
+            display: block;
+            margin-bottom: 20px;
+            text-decoration: none;
+            border-radius: 50px;
+            width: 150%;
+            padding: 10px 0;
+            border-style: none;
+         
+        }
+
+        input[type=submit] {
+
+            width: 60%;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 20px;
+            background-color: black;
+            color: blanchedalmond;
+            font-weight: bold;
+
+        }
+
+        button {
+            width: 130%;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 50px;
+            background-color: rgb(0, 0, 0);
+
+        }
+
+        button a {
+            text-decoration: none;
+            color: blanchedalmond;
+            font-weight: bold;
+          
+        }
+    </style>
+    <title>Booking Page</title>
+</head>
+
+<body>
+    <section class="pic">
+        <div class="reserv">
+
+            <form class="data">
+                <h1 class="head">
+                    Reservation Form
+                </h1><br>
+                <lable for="username">Name : <br></lable>
+                <input class="username" type="text" ><br>
+
+                <label for="Number of Persons">Number of Persons : </label>
+                <input class="Number of Persons" type="number"><br>
+          
+                <label for="date">The Date : </label>
+                <input class="date" type="date"><br>
+
+                <label for="time">The Time : </label>
+                <input class="time" type="time"><br>
+
+                <label for="payment way">Payment Way : <br><br></label>
+                <input class="payment way" type="radio" name="pay"> Cash<br><br>
+                <input class="payment way" type="radio" name="pay"> Visa<br>
+
+                <br><input type="submit" value="SUBMIT" onclick="alert('SUCCESSFUL RESEVATION')"><br><br>
+                <button><a href="home.html">Return To Previous Page</a></button>
+
+
+
+            </form>
+
+        </div>
+
+
+
+
+    </section>
+</body>
+
+</html>
